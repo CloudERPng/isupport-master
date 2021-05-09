@@ -1,0 +1,34 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Exchange Currency",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "exchange_rate",
+  "modified": "2020-07-26 01:56:59.619877",
+  "name": "Exchange Currency-exchange_rate-precision",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "precision",
+  "property_type": "Select",
+  "value": "9"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Journal Entry Account",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "reference_type",
+  "modified": "2020-08-07 22:40:52.755308",
+  "name": "Journal Entry Account-reference_type-options",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "options",
+  "property_type": "Text",
+  "value": "\nSales Invoice\nPurchase Invoice\nJournal Entry\nSales Order\nPurchase Order\nExpense Claim\nAsset\nLoan\nPayroll Entry\nEmployee Advance\nExchange Rate Revaluation\nInvoice Discounting\nFees\nExchange Currency"
+ }
+]

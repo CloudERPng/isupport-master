@@ -1,0 +1,25 @@
+{
+ "add_total_row": 0,
+ "creation": "2020-08-20 03:46:03.949122",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2020-08-20 19:25:13.121921",
+ "modified_by": "Administrator",
+ "module": "BDC",
+ "name": "Exchange Currency Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT \n\tJEA.reference_name as \"Exchange Currency:Link/Exchange Currency:150\", \n\tJEA.creation AS \"Date:Date:150\", \n\tECA.customer AS \"Customer:Link/Customer:150\", \n\tECA.broker AS \"Broker:Link/Customer:150\", \n\tJEA.account AS \"Account:Data:150\", \n\tJEA.account_currency AS \"Currency:Data:100\", \n\tJEA.debit_in_account_currency AS \"Debit:Float:100\",\n\tJEA.credit_in_account_currency AS \"Credit:Float:100\", \n\tECA.exchange_customer AS \"Exchange Customer:Data:150\", \n\tJEA.bank_name AS \"Bank Name:Data:150\", \n\tJEA.bank_account_name AS \"Account Name:Data:150\",\n\tJEA.bank_account_iban AS \"IBN:Data:200\", \n\tJEA.exchange_reference AS \"Type:Data:100\"\nFROM `tabJournal Entry Account` AS JEA\nINNER JOIN `tabExchange Currency` AS ECA ON ECA.name = JEA.reference_name\nWHERE \n\tJEA.docstatus= 1 \n\tAND (exchange_reference = 'Broker Cash' OR exchange_reference = 'Cash')\n\tAND DATE(JEA.creation) BETWEEN  %(from_date)s  AND %(to_date)s \nORDER BY JEA.creation",
+ "ref_doctype": "Exchange Currency",
+ "report_name": "Exchange Currency Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "autoname": "field:room",
+ "creation": "2020-05-31 23:35:18.086201",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "room",
+  "support_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "label": "Room",
+   "options": "Chat Room",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "support_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Support Cod",
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-06-02 03:21:12.598243",
+ "modified_by": "Administrator",
+ "module": "ISupport",
+ "name": "Chat Room Support Code",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

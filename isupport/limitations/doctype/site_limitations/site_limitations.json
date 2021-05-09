@@ -1,0 +1,252 @@
+{
+ "allow_copy": 1,
+ "creation": "2020-05-14 03:38:37.315756",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "column_break_3",
+  "end_date",
+  "column_break_4",
+  "ignore_end_date",
+  "section_break_2",
+  "company_restrictions",
+  "users_restrictions",
+  "enable_users_types_restrictions",
+  "space_restrictions",
+  "sms_restrictions",
+  "enable_sms_dates",
+  "sms_from_date",
+  "sms_to_date",
+  "column_break_6",
+  "company_allowed",
+  "users_allowed",
+  "space_allowed",
+  "sms_allowed",
+  "column_break_10",
+  "active_company",
+  "active_users",
+  "used_space",
+  "sms_usage",
+  "domain_licensing_section",
+  "domain_restrictions",
+  "domains_html",
+  "allowed_domains",
+  "users_types_usage_section",
+  "types_usage",
+  "column_break_26"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "Enable",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "company_restrictions",
+   "fieldtype": "Check",
+   "label": "Company Licensing",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "users_restrictions",
+   "fieldtype": "Check",
+   "label": "User Licensing",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "space_restrictions",
+   "fieldtype": "Check",
+   "label": "Space Licensing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "company_allowed",
+   "fieldtype": "Int",
+   "label": "Allowed Companys",
+   "read_only": 1
+  },
+  {
+   "default": "3",
+   "fieldname": "users_allowed",
+   "fieldtype": "Int",
+   "label": "Allowed Users",
+   "read_only": 1
+  },
+  {
+   "default": "1024",
+   "fieldname": "space_allowed",
+   "fieldtype": "Int",
+   "label": "Allowed Space (MB)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "active_company",
+   "fieldtype": "Int",
+   "label": "Active Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "active_users",
+   "fieldtype": "Int",
+   "label": "Active Users",
+   "read_only": 1
+  },
+  {
+   "fieldname": "used_space",
+   "fieldtype": "Int",
+   "label": "Space Usage (MB)",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sms_restrictions",
+   "fieldtype": "Check",
+   "label": "SMS Licensing",
+   "read_only": 1
+  },
+  {
+   "default": "100",
+   "fieldname": "sms_allowed",
+   "fieldtype": "Int",
+   "label": "Allowed SMS",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sms_usage",
+   "fieldtype": "Int",
+   "label": "SMS Usage",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_users_types_restrictions",
+   "fieldtype": "Check",
+   "label": "User Type Licensing",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_sms_dates",
+   "fieldtype": "Check",
+   "label": "Enable SMS Dates",
+   "read_only": 1
+  },
+  {
+   "depends_on": "enable_sms_dates",
+   "fieldname": "sms_from_date",
+   "fieldtype": "Date",
+   "label": "SMS From Date",
+   "read_only": 1
+  },
+  {
+   "depends_on": "enable_sms_dates",
+   "fieldname": "sms_to_date",
+   "fieldtype": "Date",
+   "label": "SMS To Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible_depends_on": "enable_users_types_restrictions",
+   "fieldname": "users_types_usage_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "enable_users_types_restrictions",
+   "fieldname": "types_usage",
+   "fieldtype": "HTML",
+   "label": "Types Usage"
+  },
+  {
+   "depends_on": "enable_users_types_restrictions",
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "domain_restrictions",
+   "fieldtype": "Check",
+   "label": "Domain Licensing",
+   "read_only": 1
+  },
+  {
+   "depends_on": "domain_restrictions",
+   "fieldname": "domains_html",
+   "fieldtype": "HTML",
+   "label": "Domains HTML"
+  },
+  {
+   "depends_on": "domain_restrictions",
+   "fieldname": "allowed_domains",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Allowed Domains",
+   "options": "Allowed Domains",
+   "read_only": 1
+  },
+  {
+   "collapsible_depends_on": "domain_restrictions",
+   "fieldname": "domain_licensing_section",
+   "fieldtype": "Section Break",
+   "label": "Domain Licensing"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Plan End Date",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "ignore_end_date",
+   "fieldtype": "Check",
+   "label": "Ignore Plan End Date"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "modified": "2020-06-27 16:58:05.310284",
+ "modified_by": "Administrator",
+ "module": "Limitations",
+ "name": "Site Limitations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "if_owner": 1,
+   "read": 1,
+   "role": "System Manager"
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,42 @@
+{
+ "creation": "2020-05-26 23:27:07.345078",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "support_url",
+  "support_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "support_url",
+   "fieldtype": "Data",
+   "label": "Support URL"
+  },
+  {
+   "fieldname": "support_email",
+   "fieldtype": "Data",
+   "label": "Support Email"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-06-09 23:35:44.107114",
+ "modified_by": "Administrator",
+ "module": "ISupport",
+ "name": "ISupport Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

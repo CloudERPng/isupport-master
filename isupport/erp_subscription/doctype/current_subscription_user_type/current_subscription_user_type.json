@@ -1,0 +1,53 @@
+{
+ "creation": "2020-06-23 23:11:19.255267",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_user",
+  "count",
+  "rate",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_user",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type of User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Count",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-24 01:02:13.385538",
+ "modified_by": "Administrator",
+ "module": "ERP Subscription",
+ "name": "Current Subscription User Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

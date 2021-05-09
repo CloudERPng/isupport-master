@@ -1,0 +1,88 @@
+{
+ "autoname": "ISL-.{YY}.-.######",
+ "creation": "2020-05-25 17:12:10.190351",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "time",
+  "from_user",
+  "from_name",
+  "notes",
+  "attached_file",
+  "error_msg",
+  "sync"
+ ],
+ "fields": [
+  {
+   "fieldname": "attached_file",
+   "fieldtype": "Attach",
+   "label": "Attached File",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "from_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Name",
+   "read_only": 1
+  },
+  {
+   "columns": 6,
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Message",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "from_user",
+   "fieldtype": "Data",
+   "label": "From",
+   "read_only": 1
+  },
+  {
+   "fieldname": "error_msg",
+   "fieldtype": "Text",
+   "label": "Error Msg",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sync",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Sync",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-25 22:28:39.369593",
+ "modified_by": "Administrator",
+ "module": "ISupport",
+ "name": "Issue Log",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

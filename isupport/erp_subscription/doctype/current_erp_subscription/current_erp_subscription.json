@@ -1,0 +1,132 @@
+{
+ "allow_copy": 1,
+ "creation": "2020-06-23 22:38:55.892604",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "subscription_info_section",
+  "start_date",
+  "end_date",
+  "total_amount",
+  "currency",
+  "subscription_code",
+  "column_break_6",
+  "plan_name",
+  "plan_code",
+  "type",
+  "users_types_plan",
+  "full_users_count",
+  "full_user_rate",
+  "section_break_11",
+  "current_subscription_users",
+  "plan_info_section",
+  "plan_info"
+ ],
+ "fields": [
+  {
+   "fieldname": "subscription_info_section",
+   "fieldtype": "Section Break",
+   "label": "Current Subscription Info  "
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount "
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "subscription_code",
+   "fieldtype": "Data",
+   "label": "Subscription Code"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan_name",
+   "fieldtype": "Data",
+   "label": "Plan Name"
+  },
+  {
+   "fieldname": "plan_code",
+   "fieldtype": "Data",
+   "label": "Plan Code"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "users_types_plan",
+   "fieldtype": "Data",
+   "label": "Users Types Plan"
+  },
+  {
+   "fieldname": "full_users_count",
+   "fieldtype": "Int",
+   "label": "Full Users Count"
+  },
+  {
+   "fieldname": "full_user_rate",
+   "fieldtype": "Float",
+   "label": "Full User rate"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "current_subscription_users",
+   "fieldtype": "Table",
+   "label": "Subscription Users",
+   "options": "Current Subscription User Type"
+  },
+  {
+   "fieldname": "plan_info_section",
+   "fieldtype": "Section Break",
+   "label": "Plan Info"
+  },
+  {
+   "fieldname": "plan_info",
+   "fieldtype": "Text Editor",
+   "label": "Plan Info"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "modified": "2020-06-24 01:02:04.129648",
+ "modified_by": "Administrator",
+ "module": "ERP Subscription",
+ "name": "Current ERP Subscription",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

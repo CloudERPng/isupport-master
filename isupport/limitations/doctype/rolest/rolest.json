@@ -1,0 +1,59 @@
+{
+ "creation": "2020-05-15 01:38:02.245138",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "role",
+  "disabled",
+  "desk_access"
+ ],
+ "fields": [
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Role",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enable"
+  },
+  {
+   "default": "0",
+   "fetch_from": "role.disabled",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Disabled",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fetch_from": "role.desk_access",
+   "fieldname": "desk_access",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Desk Access",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-15 22:06:36.822723",
+ "modified_by": "Administrator",
+ "module": "Limitations",
+ "name": "RolesT",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

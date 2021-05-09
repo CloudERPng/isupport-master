@@ -1,0 +1,29 @@
+{
+ "creation": "2020-05-18 01:07:58.051616",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "domain"
+ ],
+ "fields": [
+  {
+   "fieldname": "domain",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Domain",
+   "options": "Domain"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-18 01:07:58.051616",
+ "modified_by": "Administrator",
+ "module": "Limitations",
+ "name": "Allowed Domains",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
